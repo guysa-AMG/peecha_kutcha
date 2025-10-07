@@ -8,10 +8,7 @@ import Home from './home';
 
 function App() {
   const [value,setValue] = useState("")
-  
-  let handle = ()=>{
-     axios.post()
-  }
+ 
 
   return (
     <div className="App">

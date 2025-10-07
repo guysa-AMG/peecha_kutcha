@@ -1,24 +1,30 @@
 import { useEffect, useState } from "react"
 
 
-let CountDown=(val)=>{
+let CountDown=({tm=20,func})=>{
 
-let count=20
+let count=tm
 let [cnt,setCnt] = useState(count)
-
+let reset = ()=>{
+    setCnt(count)
+    timer()
+}
 useEffect(()=>{
 
-let tv =setInterval(()=>{setCnt((rev)=>rev-0.5)},1000)
-setTimeout(()=>{clearInterval(tv)},cnt*1000);
-
-
-
+timer()
 },[])
+
+let timer = ()=>{
+let tv =setInterval(()=>{setCnt(prev=>prev-1)},1000)
+
+setTimeout(()=>{clearInterval(tv);func();reset()},cnt*1000);
+
+}
     
 return(
-    <header className="App-header">
+ 
         <h1>{cnt}</h1>
-    </header>
+   
 )
 }
 export default CountDown;
