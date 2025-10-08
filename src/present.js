@@ -73,7 +73,7 @@ let togglefs=()=>{
 setTotal(Images.length)
 setTimeout(() => {
   setFinished(true)
-}, 55000);
+}, 130000);
 
  },[])
     return(
@@ -84,10 +84,10 @@ setTimeout(() => {
         {finished?<div><h1> Congratulations 🎉 </h1><div className="space"></div> <Button><Link className="again" to="/">Go Again</Link></Button></div>:""}
         {start && finished==false?<div><h1>Ready</h1>
         
-                {finished==false?startTimer?  <div className="side_timer"><CountDown  tm={5} func={()=>{SetStart(false)}} /></div>:<Button onClick={()=>{SetStartTimer(true)}} >start</Button>:""}</div>
+                {finished==false?startTimer?  <div className="side_timer"><CountDown  tm={30} func={()=>{SetStart(false)}} /></div>:<Button onClick={()=>{SetStartTimer(true)}} >start</Button>:""}</div>
         :""}
         {start || finished ?" ":<motion.img initial={{opacity:0}}  transition={{duration:2}} animate={{opacity:1}} exit={{opacity:0}} width="100%" height="100%" id="slide"  src={Images[count]}/>}
-          {start|| finished?" ":<div className="side_timer"><CountDown  tm={10} func={next} /></div>}
+          {start|| finished?" ":<div className="side_timer"><CountDown  tm={20} func={next} /></div>}
         </header>
 
     );
