@@ -16,7 +16,7 @@ nav("/presentation",{state:value})
     return (
         <header className="App-header">
           <h1>Pecha Kucha</h1>
-       <TextField value={value} onChange={(e)=>{ setValue(e.target.value)}} placeholder='Topic' />
+       <TextField  value={value} onChange={(e)=>{ setValue(e.target.value)}} placeholder='Topic' />
        <div className="space"></div>
        <Button onClick={handle} >search</Button>
        </header>

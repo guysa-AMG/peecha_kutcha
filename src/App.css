@@ -16,7 +16,7 @@
 }
 
 .App-header {
-  background-color: whitesmoke;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -84,4 +84,8 @@ button{
   background:white;
   border: 2px solid black;
   
+}
+.again{
+  text-decoration: none;
+  color: white;
 }
