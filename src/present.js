@@ -49,13 +49,9 @@ if (res.ok){
 
 }
 let next=()=>{
-    if (count ==5){
-        SetStart(true)
-        setFinished(true)
-        alert("starting")
-    }else{
-        setCount(prev=>((prev+1)))
-    }
+    
+    setCount(prev=>prev+1)
+    
     
     
 }
@@ -63,8 +59,13 @@ let startTimer =()=>{
     
 }
 let togglefs=()=>{
+    if (document.fullscreenEnabled){
+        document.exitFullscreen()
+    }
+    else{
+      document.body.requestFullscreen()
+    }
     
-    document.body.requestFullscreen()
 }
 
              
