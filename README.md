@@ -1,6 +1,6 @@
 # Getting Started with Peecha Kutcha
-This was built to help my peers with presentation and confidents and to be honest this was built because have trouble with presentation 
-and talking in public so i use this ths practise my speech.
+This was built to help my peers with presentation and confidents and to be honest this was built because i have trouble with presentation 
+and talking in public so i use this practise my speech.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
